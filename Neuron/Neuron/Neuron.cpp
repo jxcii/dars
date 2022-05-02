@@ -1,8 +1,9 @@
 ﻿
-#include <iostream>
-
+#include "NeuralWork.h"
 int main()
 {
-    std::cout << "Hello World\n";
+    NeuralWork tm({ 2,2,2 });
+    vector<double> results = tm.FeedForward({ 1,0 });
+    tm;
 }
 
